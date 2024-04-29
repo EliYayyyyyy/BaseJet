@@ -56,13 +56,13 @@ def process_text_file(file_path, worksheet, partial_name):
         print(f"Error processing file {file_path}: {e}")
 
 # Set the path to the main folder
-main_folder = "/Users/qichenyuan/Desktop/eBlock/CRISPRessoBatch_on_batch"
+main_folder = "main_folder path"
 
 # Extract the last two parts of the main folder path to create a sheet name
 sheet_name = os.path.basename(main_folder).split("_")[-1:]
 
 # Set the path for the Excel file
-excel_file_path = "/Users/qichenyuan/Desktop/eBlock/Analysis.xlsx"
+excel_file_path = "excel_file_path"
 
 workbook = openpyxl.load_workbook(excel_file_path)
 
